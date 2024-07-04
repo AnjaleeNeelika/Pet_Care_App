@@ -9,12 +9,15 @@ import Pharmacy from './pages/Pharmacy'
 import Spa from './pages/Spa'
 import Store from './pages/Store'
 import Navbar from './components/Navbar'
+import ShowPets from './pages/ShowPets'
+import Grooming from './pages/Grooming'
+import RegistrationConfirmationCode from './pages/RegistrationConfirmationCode'
 
 const App = () => {
     return (
-        <div className='w-full h-screen bg-[#f5f1ff] fixed'>
+        <div className='bg-[#f5f1ff] h-screen w-full fixed'>
             <Navbar />
-            <div className='w-full h-full overflow-auto'>
+            <div className='w-full h-[calc(100vh-10vh)] mt-[10vh]'>
                 <Routes>
                     <Route path='/' element={<Home />} />
                     <Route path='/home' element={<Home />} />
@@ -24,8 +27,10 @@ const App = () => {
                     <Route path='/pet-registration' element={<PetRegistration />} />
                     <Route path='/pharmacy' element={<Pharmacy />} />
                     <Route path='/pet-spa' element={<Spa />} />
+                    <Route path='/grooming' element={<Grooming />} />
                     <Route path='/pet-store' element={<Store />} />
-                    <Route path='/pets' element={<Store />} />
+                    <Route path='/pets' element={<ShowPets />} />
+                    <Route path='/confirmation-code' element={<RegistrationConfirmationCode />} />
                 </Routes>
             </div>            
         </div>
