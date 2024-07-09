@@ -14,7 +14,7 @@ import RegistrationConfirmationCode from './pages/RegistrationConfirmationCode'
 
 const App = () => {
     return (
-        <div className='bg-[#f5f1ff] h-screen w-full fixed'>
+        <div className='bg-[#f5f1ff] h-screen w-full fixed overflow-auto'>
             <Navbar />
             <div className='w-full h-[calc(100vh-10vh)] mt-[10vh]'>
                 <Routes>
