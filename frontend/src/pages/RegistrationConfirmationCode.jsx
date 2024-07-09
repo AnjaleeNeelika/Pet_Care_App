@@ -1,8 +1,13 @@
 import React from 'react';
+import Dog3 from '../assets/images/Dog3.png';
+import CatDog2 from '../assets/images/Cat&Dog2.png';
 
 const RegistrationConfirmationCode = () => {
     return (
-        <div className='w-full p-5'>
+        <div className='w-full h-full p-5 flex justify-center items-center overflow-auto'>
+            <div className='w-fit flex justify-center items-center'>
+                <img src={CatDog2} className='w-[25vw]' />
+            </div>
             <div className='w-fit px-20 py-5'>
                 <p className='text-xl'>We have sent a 6-digit confirmation code to your email. </p>
                 <p className='text-xl'>Please enter the code to process further.</p>

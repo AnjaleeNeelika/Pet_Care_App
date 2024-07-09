@@ -6,7 +6,6 @@ import OwnerLogin from './pages/OwnerLogin'
 import OwnerRegistration from './pages/OwnerRegistration'
 import PetRegistration from './pages/PetRegistration'
 import Pharmacy from './pages/Pharmacy'
-import Spa from './pages/Spa'
 import Store from './pages/Store'
 import Navbar from './components/Navbar'
 import ShowPets from './pages/ShowPets'
@@ -26,7 +25,6 @@ const App = () => {
                     <Route path='/owner-registration' element={<OwnerRegistration />} />
                     <Route path='/pet-registration' element={<PetRegistration />} />
                     <Route path='/pharmacy' element={<Pharmacy />} />
-                    <Route path='/pet-spa' element={<Spa />} />
                     <Route path='/grooming' element={<Grooming />} />
                     <Route path='/pet-store' element={<Store />} />
                     <Route path='/pets' element={<ShowPets />} />

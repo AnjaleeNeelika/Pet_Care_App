@@ -10,7 +10,7 @@ const OwnerRegistration = () => {
                 <form action="" method="post" className='max-w-[600px] min-w-[200px] w-full mt-8'>
                     <div className='w-full flex flex-auto justify-between items-center gap-5'>
                         <TextBoxWithLabel label="First Name" placeholder="First Name" />
-                        <TextBoxWithLabel label="First Name" placeholder="First Name" />
+                        <TextBoxWithLabel label="Last Name" placeholder="Last Name" />
                     </div>
                     <div className='mt-3'>
                         <TextBoxWithLabel label="Address" placeholder="Address" />
