@@ -1,12 +1,10 @@
 import React from 'react';
 import TextBoxWithLabel from '../components/TextBoxWithLabel';
 import { Link } from 'react-router-dom';
-import CatAndDog2 from '../assets/images/Cat&Dog2.png';
 
 const OwnerLogin = () => {
     return (
         <div className='w-full h-full flex items-center justify-center gap-10'>
-            <img src={CatAndDog2} className='w-[30vw]' />
             <div className='bg-white py-5 px-10 w-fit h-fit rounded-md shadow-md'>
             <h1 className='w-fit mx-auto'>Owner Login</h1>
                 <form action="" method="post" className='max-w-[600px] min-w-[200px] w-full mt-8'>
