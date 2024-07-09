@@ -92,7 +92,7 @@ const Navbar = () => {
                             Owner Login
                         </Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link
                             to={{
                                 pathname: '/owner-registration'
@@ -101,7 +101,7 @@ const Navbar = () => {
                         >
                             Owner Registration
                         </Link>
-                    </li>
+                    </li> */}
                     <li>
                         <Link
                             to={{
