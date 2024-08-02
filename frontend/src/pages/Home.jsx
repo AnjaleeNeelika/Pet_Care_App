@@ -1,6 +1,12 @@
 import React from 'react';
 import CatAndDog3 from '../assets/images/Cat&Dog3.png';
 import { Link } from 'react-router-dom';
+import { BiClinic } from 'react-icons/bi';
+import { GiMedicines } from 'react-icons/gi';
+import PetClinicImg1 from '../assets/images/pet-clinic-1.jpg';
+import PetPharmacyImg1 from "../assets/images/pet-pharmacy-2.jpg";
+import PetGroomingImg1 from '../assets/images/pet-grooming-3.jpg';
+import PetStore1 from '../assets/images/pet-store-2.jpg';
 
 const Home = () => {
     return (
@@ -25,6 +31,47 @@ const Home = () => {
                 </div>
                 <img src={CatAndDog3} className='h-full w-auto' />
             </div>
+
+            <div className='w-full p-20'>
+                <h1 className='w-fit mx-auto text-[#592a9c]'>Our Services</h1>
+                <div className='mt-10'>
+                    <div className='flex justify-center items-center gap-10'>
+                        <div className='bg-white p-5 shadow-md rounded-md border border-[#ddd] flex justify-start items-center gap-10 max-w-[40rem] w-full'>
+                            {/* <BiClinic className='text-7xl text-[#4a0faf] mx-auto' /> */}
+                            <img src={PetClinicImg1} className='max-w-[15rem] w-full' />
+                            <div>
+                                <div className='w-fit mx-auto text-2xl text-[#4a0faf] font-medium'>Clinic</div>
+                            </div>                            
+                        </div>
+                        <div className='bg-white  p-5 shadow-md rounded-md border border-[#ddd] flex justify-start items-center gap-10 max-w-[40rem] w-full'>
+                            {/* <GiMedicines className='text-7xl text-[#4a0faf] mx-auto' /> */}
+                            <img src={PetPharmacyImg1} className='max-w-[15rem] w-full' />
+                            <div>
+                                <div className='w-fit mx-auto text-2xl text-[#4a0faf] font-medium'>Pharmacy</div>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div className='flex justify-center items-center mt-10 gap-10'>
+                        <div className='bg-white p-5 shadow-md rounded-md border border-[#ddd] flex justify-start items-center gap-10 max-w-[40rem] w-full'>
+                            <img src={PetGroomingImg1} className='max-w-[15rem] w-full' />
+                            <div>
+                                <div className='w-fit mx-auto text-2xl text-[#4a0faf] font-medium'>Grooming</div>
+                            </div>                            
+                        </div>
+                        <div className='bg-white p-5 shadow-md rounded-md border border-[#ddd] flex justify-start items-center gap-10 max-w-[40rem] w-full'>
+                            <img src={PetStore1} className='max-w-[15rem] w-full' />
+                            <div>
+                                <div className='w-fit mx-auto text-2xl text-[#4a0faf] font-medium'>Store</div>
+                            </div>                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <footer className='p-5 border-t-2 border-[#ddd]'>
+
+            </footer>
         </div>
     )
 }

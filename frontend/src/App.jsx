@@ -16,7 +16,7 @@ const App = () => {
     return (
         <div className='bg-[#f5f1ff] h-screen w-full fixed overflow-auto'>
             <Navbar />
-            <div className='w-full h-[calc(100vh-10vh)] mt-[10vh]'>
+            <div className='w-full h-[calc(100vh-10vh)]'>
                 <Routes>
                     <Route path='/' element={<Home />} />
                     <Route path='/home' element={<Home />} />
