@@ -9,7 +9,7 @@ const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <div className='w-full h-[10vh] bg-[#f5f1ff] text-[#2a2f4f] flex justify-between items-center gap-10 px-5 py-2 fixed'>
+        <div className='w-full h-[10vh] bg-[#f5f1ff] text-[#2a2f4f] flex justify-between items-center gap-10 px-5 py-2'>
             <div className='flex justify-center items-center gap-1 text-3xl'>
                 <IoPawSharp />
                 <h1>CarePaw</h1>
