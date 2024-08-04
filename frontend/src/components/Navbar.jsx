@@ -3,10 +3,16 @@ import { Link } from 'react-router-dom';
 import { IoPawSharp } from 'react-icons/io5';
 import { IoMdAdd } from 'react-icons/io';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import LoginPopup from './LoginPopup';
 
 const Navbar = () => {
     const [selected, setSelected] = useState('Home');
     const [menuOpen, setMenuOpen] = useState(false);
+    const [loginPopup, setLoginPopup] = useState(false);
+
+    const showLoginPopup = () => {
+        setLoginPopup(!loginPopup);
+    }
 
     return (
         <div className='w-full h-[10vh] bg-[#f5f1ff] text-[#2a2f4f] flex justify-between items-center gap-10 px-5 py-2'>
@@ -16,7 +22,7 @@ const Navbar = () => {
             </div>
             <div>
                 <ul  className={`h-fit md:flex md:flex-wrap md:items-center md:justify-center md:static md:z-auto md:w-auto md:p-0 md:bg-transparent p-10 pt-20 left-0 w-full gap-10 font-semibold absolute transition-all duration-150 ease-in bg-white ${menuOpen ? 'top-0 opacity-100 shadow-md' : 'top-[-490px] md:opacity-100 opacity-0'}`}>
-                    <li>
+                    {/* <li>
                         <Link
                             to={{
                                 pathname: '/home'
@@ -81,16 +87,22 @@ const Navbar = () => {
                         >
                             Your Pets
                         </Link>
-                    </li>
+                    </li> */}
                     <li>
-                        <Link
+                        {/* <Link
                             to={{
                                 pathname: '/owner-login'
                             }}
-                            className='w-fit bg-[#2a2f4f] text-white text-sm text-center px-4 py-2 rounded-full shadow-md flex'
+                            className='w-fit bg-[#2a2f4f] text-white text-sm text-center px-7 py-3 rounded-full shadow-md flex'
                         >
                             Owner Login
-                        </Link>
+                        </Link> */}
+                        <button 
+                            className='w-fit bg-[#2a2f4f] text-white text-sm text-center px-7 py-3 rounded-full shadow-md'
+                            onClick={showLoginPopup}
+                        >
+                            Login
+                        </button>
                     </li>
                     {/* <li>
                         <Link
@@ -102,7 +114,7 @@ const Navbar = () => {
                             Owner Registration
                         </Link>
                     </li> */}
-                    <li>
+                    {/* <li>
                         <Link
                             to={{
                                 pathname: '/pet-registration'
@@ -112,12 +124,14 @@ const Navbar = () => {
                             <IoMdAdd />
                             Add Pet
                         </Link>
-                    </li>
+                    </li> */}
                 </ul>
             </div>
             <div onClick={() => setMenuOpen(!menuOpen)} className='text-2xl text-black absolute right-8 top-8 cursor-pointer md:hidden'>
                 {menuOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
             </div>
+            
+            {loginPopup && <LoginPopup showLoginPopup={showLoginPopup} />}
         </div>
     )
 }

@@ -1,14 +1,16 @@
-import React from 'react';
-import CatAndDog3 from '../assets/images/Cat&Dog3.png';
-import { Link } from 'react-router-dom';
-import PetClinicImg1 from '../assets/images/pet-clinic-1.jpg';
-import PetPharmacyImg1 from "../assets/images/pet-pharmacy-2.jpg";
-import PetGroomingImg1 from '../assets/images/pet-grooming-3.jpg';
-import PetStore1 from '../assets/images/pet-store-2.jpg';
+import React from 'react'
+import Navbar from '../components/Navbar'
+import { Link } from 'react-router-dom'
+import CatAndDog3 from '../assets/images/Cat&Dog3.png'
+import PetClinicImg1 from '../assets/images/pet-clinic-1.jpg'
+import PetPharmacyImg1 from "../assets/images/pet-pharmacy-2.jpg"
+import PetGroomingImg1 from '../assets/images/pet-grooming-3.jpg'
+import PetStore1 from '../assets/images/pet-store-2.jpg'
 
-const Home = () => {
+const LandingPage = () => {
     return (
-        <div className='w-full h-fit'>
+        <div className='w-full h-full'>
+            <Navbar />
             <div className='w-full h-[70vh] p-10 flex flex-wrap justify-center items-center gap-10'>
                 <div className='w-fit'>
                     <div className='text-5xl text-[#9243d9] italic font-bold'>
@@ -95,4 +97,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default LandingPage
