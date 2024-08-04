@@ -11,15 +11,20 @@ import Navbar from './components/Navbar'
 import ShowPets from './pages/ShowPets'
 import Grooming from './pages/Grooming'
 import RegistrationConfirmationCode from './pages/RegistrationConfirmationCode'
+import Sidebar from './components/Sidebar'
+import LandingPage from './pages/LandingPage'
+import Dashboard from './pages/Dashboard'
 
 const App = () => {
     return (
         <div className='bg-[#f5f1ff] h-screen w-full fixed overflow-auto'>
-            <Navbar />
-            <div className='w-full h-[calc(100vh-10vh)]'>
+            {/* <Navbar /> */}
+            {/* <Sidebar /> */}
+            <div className='w-full h-screen'>
                 <Routes>
-                    <Route path='/' element={<Home />} />
-                    <Route path='/home' element={<Home />} />
+                    <Route path='/' element={<LandingPage />} />
+                    {/* <Route path='/home' element={<Home />} /> */}
+                    <Route path='/dashboard' element={<Dashboard />} />
                     <Route path='/pet-clinic' element={<Clinic />} />
                     <Route path='/owner-login' element={<OwnerLogin />} />
                     <Route path='/owner-registration' element={<OwnerRegistration />} />
