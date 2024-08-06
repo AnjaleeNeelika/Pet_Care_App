@@ -118,7 +118,7 @@ const Sidebar = () => {
                             Add Pet
                         </Link>
                     </li> */}
-                    <li className={`px-10 py-5 flex gap-2 items-center`}>
+                    {/* <li className={`px-10 py-5 flex gap-2 items-center`}>
                         <Link
                             // to={{
                             //     pathname: '/owner-login'
@@ -127,23 +127,37 @@ const Sidebar = () => {
                         >
                             Logout 
                         </Link>
-                    </li> 
+                    </li>  */}
                     
                 </ul>
             </div>
-            <div className='w-full px-5 py-5 border-t-2 border-[#d9dcee] flex justify-between items-center'>
+            <div className='w-full px-5 pt-5 pb-3 border-t-2 border-[#d9dcee] flex justify-between items-center'>
                 <div className='flex gap-4 items-center'>
                     <img src={AvatarAli} className='rounded-full shadow-md w-14 h-14' />
                     <span className='text-sm text-[#5a506d] font-medium'>Anjalee Neelika</span>
                 </div>
                 <button onClick={() => setShowDropdown(!showDropdown)} className='text-2xl'>
-                    {showDropdown ? <MdArrowDropDown /> : <MdArrowDropUp />}                    
+                    {showDropdown ? <MdArrowDropUp /> : <MdArrowDropDown />}                    
                 </button>
             </div>
             {/* <div onClick={() => setMenuOpen(!menuOpen)} className='text-2xl text-black absolute right-8 top-8 cursor-pointer md:hidden'>
                 {menuOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
             </div> */}
-            <div className=''></div>
+            {showDropdown ? 
+                <div className='w-fit bg-white text-center text-sm text-[#876eb6] font-medium px-5'>
+                    <ul>
+                        <li className='p-5'>
+                            <Link>Logout</Link>
+                        </li>
+                        <li className='p-5 border-t'>
+                            <Link>Your Profile</Link>
+                        </li>
+                    </ul>                
+                </div>
+                :
+                <div></div>
+            }
+            
         </div>
     )
 }
