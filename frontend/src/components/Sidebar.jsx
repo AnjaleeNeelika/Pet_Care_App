@@ -6,20 +6,23 @@ import { FaScissors } from 'react-icons/fa6';
 import { GiMedicines } from 'react-icons/gi';
 import { ImHome } from 'react-icons/im';
 import { IoPawSharp } from 'react-icons/io5';
-import { MdPets } from 'react-icons/md';
+import { MdArrowDropDown, MdArrowDropUp, MdPets } from 'react-icons/md';
 import { Link } from 'react-router-dom';
+import AvatarAli from '../assets/images/avatar-ali.png';
+import { RxDropdownMenu } from 'react-icons/rx';
 
 const Sidebar = () => {
     const [selected, setSelected] = useState('Home');
     const [menuOpen, setMenuOpen] = useState(false);
+    const [showDropdown, setShowDropdown] = useState(false);
 
     return (
         <div className='h-full w-full max-w-sm bg-[#f5f1ff] text-[#2a2f4f] gap-10 py-10'>
-            <div className='w-fit flex justify-center items-center gap-1 text-3xl mb-10 mx-auto'>
+            <div className='w-fit h-fit flex justify-center items-center gap-1 text-3xl mb-10 mx-auto'>
                 <IoPawSharp />
                 <h1>CarePaw</h1>
             </div>
-            <div>
+            <div className='h-fit'>
                 <ul className={`h-fit md:static md:z-auto md:w-auto md:p-0 md:bg-transparent p-10 pt-20 left-0 w-full gap-10 font-semibold absolute transition-all duration-150 ease-in bg-white ${menuOpen ? 'top-0 opacity-100 shadow-md' : 'top-[-490px] md:opacity-100 opacity-0'}`}>
                     <li className={`px-10 py-5 flex gap-2 items-center hover:bg-[#2a2f4f] hover:text-white ${selected ? `bg-[#2a2f4f] text-white` : ``}`}>
                         <ImHome className='text-lg' />
@@ -125,11 +128,22 @@ const Sidebar = () => {
                             Logout 
                         </Link>
                     </li> 
+                    
                 </ul>
             </div>
-            <div onClick={() => setMenuOpen(!menuOpen)} className='text-2xl text-black absolute right-8 top-8 cursor-pointer md:hidden'>
-                {menuOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
+            <div className='w-full px-5 py-5 border-t-2 border-[#d9dcee] flex justify-between items-center'>
+                <div className='flex gap-4 items-center'>
+                    <img src={AvatarAli} className='rounded-full shadow-md w-14 h-14' />
+                    <span className='text-sm text-[#5a506d] font-medium'>Anjalee Neelika</span>
+                </div>
+                <button onClick={() => setShowDropdown(!showDropdown)} className='text-2xl'>
+                    {showDropdown ? <MdArrowDropDown /> : <MdArrowDropUp />}                    
+                </button>
             </div>
+            {/* <div onClick={() => setMenuOpen(!menuOpen)} className='text-2xl text-black absolute right-8 top-8 cursor-pointer md:hidden'>
+                {menuOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
+            </div> */}
+            <div className=''></div>
         </div>
     )
 }
