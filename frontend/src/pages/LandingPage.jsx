@@ -9,7 +9,7 @@ import PetStore1 from '../assets/images/pet-store-2.jpg'
 
 const LandingPage = () => {
     return (
-        <div className='w-full h-full'>
+        <div className='w-full bg-[#f5f1ff]'>
             <Navbar />
             <div className='w-full h-[70vh] p-10 flex flex-wrap justify-center items-center gap-10'>
                 <div className='w-fit'>

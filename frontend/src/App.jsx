@@ -13,30 +13,29 @@ import Grooming from './pages/Grooming'
 import RegistrationConfirmationCode from './pages/RegistrationConfirmationCode'
 import Sidebar from './components/Sidebar'
 import LandingPage from './pages/LandingPage'
-import Dashboard from './pages/Dashboard'
+import UserDashboard from './pages/UserDashboard'
+import Layout from './components/Layout'
 
 const App = () => {
     return (
-        <div className='bg-[#f5f1ff] h-screen w-full fixed overflow-auto'>
-            {/* <Navbar /> */}
-            {/* <Sidebar /> */}
-            <div className='w-full h-screen'>
-                <Routes>
-                    <Route path='/' element={<LandingPage />} />
-                    {/* <Route path='/home' element={<Home />} /> */}
-                    <Route path='/dashboard' element={<Dashboard />} />
-                    <Route path='/pet-clinic' element={<Clinic />} />
-                    <Route path='/owner-login' element={<OwnerLogin />} />
-                    <Route path='/owner-registration' element={<OwnerRegistration />} />
-                    <Route path='/pet-registration' element={<PetRegistration />} />
-                    <Route path='/pharmacy' element={<Pharmacy />} />
-                    <Route path='/grooming' element={<Grooming />} />
-                    <Route path='/pet-store' element={<Store />} />
-                    <Route path='/pets' element={<ShowPets />} />
-                    <Route path='/confirmation-code' element={<RegistrationConfirmationCode />} />
-                </Routes>
-            </div>            
-        </div>
+        <Routes>
+            <Route path='/' element={<Layout />}>
+                <Route path='/' element={<LandingPage />} />
+                {/* <Route path='/home' element={<Home />} /> */}
+                <Route path='user-dashboard' element={<UserDashboard />}>
+                    <Route path='pet-clinic' element={<Clinic />} />                        
+                    <Route path='pet-registration' element={<PetRegistration />} />
+                    <Route path='pharmacy' element={<Pharmacy />} />
+                    <Route path='grooming' element={<Grooming />} />
+                    <Route path='pet-store' element={<Store />} />
+                    <Route path='pets' element={<ShowPets />} />
+                </Route>
+                
+                <Route path='owner-login' element={<OwnerLogin />} />
+                <Route path='owner-registration' element={<OwnerRegistration />} />
+                <Route path='confirmation-code' element={<RegistrationConfirmationCode />} />
+            </Route>
+        </Routes>
     )
 }
 
