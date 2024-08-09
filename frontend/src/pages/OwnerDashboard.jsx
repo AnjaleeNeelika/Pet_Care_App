@@ -1,12 +1,12 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
-import Sidebar from '../components/PetOwner/Sidebar'
+import PetOwnerSidebar from '../components/PetOwner/PetOwnerSidebar'
 
 const OwnerDashboard = () => {
     return (
         <div className='w-full h-screen'>
             <div className='z-30 sticky left-0 top-0 h-full'>
-                <Sidebar />
+                <PetOwnerSidebar />
             </div>
             <div className='w-full'> 
                 <Outlet />
