@@ -42,18 +42,38 @@ const LandingPage = () => {
                                 <img src={PetClinicImg1} className='max-w-[15rem] w-full rounded-md' />
                             </div>
                             
-                            <div>
-                                <div className='w-fit mx-auto text-2xl text-[#4a0faf] font-medium'>Clinic</div>
+                            <div className='flex flex-col gap-2'>
+                                <div className='w-fit text-2xl text-[#4a0faf] font-medium'>Clinic</div>
+                                <div className='text-lg text-[#4a0faf]'>
+                                    <ul className='ml-5'>
+                                        <li>- Routine check-ups</li>
+                                        <li>- Preventive care</li>
+                                        <li>- Laboratory testings</li>
+                                        <li>- Spaying and neutering</li>
+                                        <li>- Soft tissue and orthopedic surgeries</li>
+                                        <li>- Anesthesia and pain management</li>
+                                    </ul>
+                                </div>
                             </div>                            
                         </div>
-                        <div className='bg-white  p-5 shadow-md rounded-md border border-[#ddd] flex justify-start items-center gap-10 max-w-[40rem] w-full'>
+                        <div className='bg-white p-5 shadow-md rounded-md border border-[#ddd] flex justify-start items-center gap-10 max-w-[40rem] w-full'>
                             {/* <GiMedicines className='text-7xl text-[#4a0faf] mx-auto' /> */}
                             <div className='w-fit h-fit rounded-md shadow-md'>
                                 <img src={PetPharmacyImg1} className='max-w-[15rem] w-full rounded-md' />
                             </div>
                             
-                            <div>
-                                <div className='w-fit mx-auto text-2xl text-[#4a0faf] font-medium'>Pharmacy</div>
+                            <div className='flex flex-col gap-2'>
+                                <div className='w-fit text-2xl text-[#4a0faf] font-medium'>Pharmacy</div>
+                                <div className='text-lg text-[#4a0faf]'>
+                                    <ul className='ml-5'>
+                                        <li>- Prescription medications</li>
+                                        <li>- Preventive medications</li>
+                                        <li>- Nutritional suppliments</li>
+                                        <li>- Refill reminders and easy ordering</li>
+                                        <li>- Home delivery</li>
+                                        <li>- Pharmeceuticsl advice</li>
+                                    </ul>
+                                </div>
                             </div>                            
                         </div>
                     </div>
@@ -73,7 +93,17 @@ const LandingPage = () => {
                             </div>
 
                             <div>
-                                <div className='w-fit mx-auto text-2xl text-[#4a0faf] font-medium'>Store</div>
+                                <div className='w-fit text-2xl text-[#4a0faf] font-medium'>Store</div>
+                                <div className='text-lg text-[#4a0faf]'>
+                                    <ul className='ml-5'>
+                                        <li>- Bating and shampooing</li>
+                                        <li>- Haircut and styling</li>
+                                        <li>- Brushing and de-shedding</li>
+                                        <li>- Nail trimming and filing</li>
+                                        <li>- Ear cleaning</li>
+                                        <li>- Spa and pampering services</li>
+                                    </ul>
+                                </div>
                             </div>                            
                         </div>
                     </div>
