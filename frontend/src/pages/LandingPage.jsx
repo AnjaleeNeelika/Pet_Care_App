@@ -84,7 +84,17 @@ const LandingPage = () => {
                             </div>
 
                             <div>
-                                <div className='w-fit mx-auto text-2xl text-[#4a0faf] font-medium'>Grooming</div>
+                                <div className='w-fit text-2xl text-[#4a0faf] font-medium'>Grooming</div>
+                                <div className='text-lg text-[#4a0faf]'>
+                                    <ul className='ml-5'>
+                                        <li>- Bating and shampooing</li>
+                                        <li>- Haircut and styling</li>
+                                        <li>- Brushing and de-shedding</li>
+                                        <li>- Nail trimming and filing</li>
+                                        <li>- Ear cleaning</li>
+                                        <li>- Spa and pampering services</li>
+                                    </ul>
+                                </div>
                             </div>                            
                         </div>
                         <div className='bg-white p-5 shadow-md rounded-md border border-[#ddd] flex justify-start items-center gap-10 max-w-[40rem] w-full'>
@@ -96,12 +106,7 @@ const LandingPage = () => {
                                 <div className='w-fit text-2xl text-[#4a0faf] font-medium'>Store</div>
                                 <div className='text-lg text-[#4a0faf]'>
                                     <ul className='ml-5'>
-                                        <li>- Bating and shampooing</li>
-                                        <li>- Haircut and styling</li>
-                                        <li>- Brushing and de-shedding</li>
-                                        <li>- Nail trimming and filing</li>
-                                        <li>- Ear cleaning</li>
-                                        <li>- Spa and pampering services</li>
+                                        
                                     </ul>
                                 </div>
                             </div>                            
