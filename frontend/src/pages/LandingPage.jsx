@@ -70,7 +70,7 @@ const LandingPage = () => {
                                         <li>- Preventive medications</li>
                                         <li>- Nutritional suppliments</li>
                                         <li>- Refill reminders and easy ordering</li>
-                                        <li>- Home delivery</li>
+                                        <li>- Over-the-Counter (OTC) products</li>                                        
                                         <li>- Pharmeceuticsl advice</li>
                                     </ul>
                                 </div>
@@ -106,7 +106,12 @@ const LandingPage = () => {
                                 <div className='w-fit text-2xl text-[#4a0faf] font-medium'>Store</div>
                                 <div className='text-lg text-[#4a0faf]'>
                                     <ul className='ml-5'>
-                                        
+                                        <li>- Pet food</li>
+                                        <li>- Pet accessories</li>
+                                        <li>- Toys and Enrichment</li>
+                                        <li>- Training and behavior aids</li>
+                                        <li>- Pet travel essentials</li>
+                                        <li>- Litter and waste management</li>
                                     </ul>
                                 </div>
                             </div>                            
