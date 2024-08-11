@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, Routes } from 'react-router-dom'
+import { Route, Router, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Clinic from './pages/Clinic'
 import OwnerLogin from './pages/OwnerLogin'
@@ -18,9 +18,8 @@ const App = () => {
     return (
         <Routes>
             <Route path='/' element={<Layout />}>
-                <Route path='/' element={<LandingPage />} />
-                {/* <Route path='/home' element={<Home />} /> */}
-                <Route path='user-dashboard' element={<OwnerDashboard />}>
+                <Route index element={<LandingPage />} />
+                <Route path='pet-owner' element={<OwnerDashboard />}>
                     <Route path='home' element={<Home />} />
                     <Route path='pet-clinic' element={<Clinic />} />                        
                     <Route path='pet-registration' element={<PetRegistration />} />

@@ -72,6 +72,7 @@ const LandingPage = () => {
                                         <li>- Refill reminders and easy ordering</li>
                                         <li>- Over-the-Counter (OTC) products</li>                                        
                                         <li>- Pharmeceuticsl advice</li>
+                                        <li>- Online ordering and home delivery</li>
                                     </ul>
                                 </div>
                             </div>                            
@@ -112,6 +113,7 @@ const LandingPage = () => {
                                         <li>- Training and behavior aids</li>
                                         <li>- Pet travel essentials</li>
                                         <li>- Litter and waste management</li>
+                                        <li>- Online ordering and home delivery</li>
                                     </ul>
                                 </div>
                             </div>                            
