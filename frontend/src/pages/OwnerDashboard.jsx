@@ -8,7 +8,7 @@ const OwnerDashboard = () => {
             <div className='z-30 sticky left-0 top-0 h-full'>
                 <PetOwnerSidebar />
             </div>
-            <div className='w-full'> 
+            <div className='w-full px-12 py-8'> 
                 <Outlet />
             </div>            
         </div>
