@@ -8,12 +8,12 @@ import { GiMedicinePills } from 'react-icons/gi';
 
 const PetOwnerSidebar = () => {
     const menus = [
-        {name: "Dashboard", link: '/', icon: RiDashboardFill, active: "dashboard"},
-        {name: "Clinic", link: 'clinic', icon: FaClinicMedical, active: "clinic"},
-        {name: "Grooming", link: '/', icon: FaScissors, active: "grooming"},
-        {name: "Pharmacy", link: '/', icon: GiMedicinePills, active: "pharmacy"},
-        {name: "Store", link: '/', icon: FaStore, active: "store"},
-        {name: "Your Pets", link: '/', icon: FaDog, active: "your-pets"},
+        {name: "Dashboard", link: '/pet-owner/home', icon: RiDashboardFill, active: "dashboard"},
+        {name: "Clinic", link: '/pet-owner/pet-clinic', icon: FaClinicMedical, active: "clinic"},
+        {name: "Grooming", link: '/pet-owner/grooming', icon: FaScissors, active: "grooming"},
+        {name: "Pharmacy", link: '/pet-owner/pharmacy', icon: GiMedicinePills, active: "pharmacy"},
+        {name: "Store", link: '/pet-owner/pet-store', icon: FaStore, active: "store"},
+        {name: "Your Pets", link: '/pet-owner/pets', icon: FaDog, active: "your-pets"},
     ];
 
     return (

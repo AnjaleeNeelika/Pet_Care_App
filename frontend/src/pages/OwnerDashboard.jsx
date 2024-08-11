@@ -4,7 +4,7 @@ import PetOwnerSidebar from '../components/PetOwner/PetOwnerSidebar'
 
 const OwnerDashboard = () => {
     return (
-        <div className='w-full h-screen'>
+        <div className='w-full h-screen flex'>
             <div className='z-30 sticky left-0 top-0 h-full'>
                 <PetOwnerSidebar />
             </div>

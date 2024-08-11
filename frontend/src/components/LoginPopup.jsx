@@ -17,7 +17,7 @@ const LoginPopup = ({ showLoginPopup }) => {
                     <div className='mt-10 mb-5 w-full flex justify-center items-center'>
                         <Link
                             to={{
-                                pathname: 'user-dashboard'
+                                pathname: 'pet-owner/home'
                             }}
                         >
                             <button className='bg-[#4a0faf] text-white px-7 py-2.5 rounded shadow-md hover:-translate-y-1 duration-150'>Login</button>
