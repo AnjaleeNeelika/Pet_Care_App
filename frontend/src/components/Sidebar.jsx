@@ -11,7 +11,7 @@ const Sidebar = ({ menus }) => {
     const [threeDotMenuOpen, setThreeDotMenuOpen] = useState(false);
 
     return (
-        <div className={`bg-[#2a2f4f] min-h-screen text-white flex flex-col ${open ? 'w-80' : 'w-20'} duration-500`}>
+        <div className={`bg-primary-900 min-h-screen text-white flex flex-col ${open ? 'w-80' : 'w-20'} duration-500`}>
             <div className={`py-3 px-4 flex items-center ${!open ? 'justify-center' : 'justify-end'}`}>
                 <HiMenuAlt3 
                     className='cursor-pointer text-3xl' 
@@ -53,7 +53,7 @@ const Sidebar = ({ menus }) => {
             
             <div className='w-full border-t flex px-3 py-5 justify-between items-center'>
                 <div className={`group flex items-center ${!open ? 'pl-2 cursor-pointer' : 'gap-3'}`}>
-                    <div className='w-10 h-10 bg-purple-200 rounded-md'></div>
+                    <div className='w-10 h-10 bg-white rounded-md'></div>
                     <div className={`flex flex-col whitespace-pre duration-500 ${!open && 'opacity-0 translate-x-28 overflow-hidden'}`}>
                         <div className='font-semibold'>Anjalee Neelika</div>
                         <span className='text-xs text-gray-300'>anjaleeneelika@gmail.com</span>

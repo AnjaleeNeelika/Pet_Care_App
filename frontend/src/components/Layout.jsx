@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom'
 
 const Layout = () => {
     return (
-        <main className='bg-[#FAFAFC]'>
+        <main className='bg-bgColor'>
             <Outlet />
         </main>
     )
