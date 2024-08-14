@@ -27,26 +27,74 @@ const Home = () => {
                 <div className='w-1/2 h-full'>
                     <div className='w-fit bg-white p-5 shadow-md border border-[#EAEBEE] rounded-md'>
                         <div className='text-2xl text-[#0D1626] font-medium'>Pets</div>
-                        <div className='flex flex-col gap-3'>
-                            <div className='flex gap-5 items-center'>
+                        <div className='flex flex-col gap-3 mt-3'>
+                            {/* <div className='flex gap-5 items-center'>
                                 <FaDog />
                                 <IoMaleOutline />
-                                <img src={Dog1} className='w-10 h-10 bg-primary-400 rounded-full' />
+                                <div className='w-10 h-10 bg-primary-400 rounded-full'>
+                                    <img src={Dog1} className='rounded-full w-full h-full' />
+                                </div>                                
                                 <Link>Shadow</Link>
                                 <span>Labradore</span>
                             </div>
+                            <hr />
                             <div className='flex gap-5 items-center'>
                                 <FaCat />
                                 <IoFemaleOutline />
-                                <img src={Cat1} className='w-10 h-10 bg-primary-400 rounded-full' />
-                                <Link>Shadow</Link>
-                                <span>Labradore</span>
-                            </div>
+                                <div className='w-10 h-10 bg-primary-400 rounded-full'>
+                                    <img src={Cat1} className='rounded-full w-full h-full' />
+                                </div>
+                                <Link>Mew</Link>
+                                <span>Persian</span>
+                            </div> */}
+                            <table>
+                                <tr className='border-b border-gray-200 text-gray-800 font-medium'>
+                                    <td className='py-2 px-4'>
+                                        <FaDog />
+                                    </td>
+                                    <td className='py-2 px-4'>
+                                        <IoMaleOutline />
+                                    </td>
+                                    <td className='py-2 px-4'>
+                                        <div className='w-10 h-10 bg-primary-300 rounded-full object-contain overflow-hidden'>
+                                            <img src={Dog1} className='rounded-full w-full h-fit' />
+                                        </div> 
+                                    </td>
+                                    <td className='py-2 px-4 text-secondary-400'>
+                                        <Link>Shadow</Link>
+                                    </td>
+                                    <td className='py-2 px-4'>Labradore</td>
+                                </tr>
+                                <tr className='border-b border-gray-200 text-gray-800 font-medium'>
+                                    <td className='py-2 px-4'>
+                                        <FaCat />
+                                    </td>
+                                    <td className='py-2 px-4'>
+                                        <IoFemaleOutline />
+                                    </td>
+                                    <td className='py-2 px-4'>
+                                        <div className='w-10 h-10 bg-primary-300 rounded-full object-contain overflow-hidden'>
+                                            <img src={Cat1} className='rounded-full w-full h-fit' />
+                                        </div> 
+                                    </td>
+                                    <td className='py-2 px-4 text-secondary-400'>
+                                        <Link>Mew</Link>
+                                    </td>
+                                    <td className='py-2 px-4'>Persian</td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                 </div>
 
-                <div className='w-1/2 bg-slate-400 p-5 h-full'></div>
+                <div className='w-1/2 bg-slate-400 p-5 h-full'>
+                    <div className='w-fit bg-white p-5 shadow-md border border-[#EAEBEE] rounded-md'>
+                        <div className='text-2xl text-[#0D1626] font-medium'>Upcoming Appointments</div>
+                        <table>
+                            <tr></tr>
+                        </table>
+                    </div>
+                </div>
             </div>
         </section>
     )
