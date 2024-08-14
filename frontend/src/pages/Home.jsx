@@ -4,6 +4,11 @@ import { IoFemaleOutline, IoMaleOutline } from 'react-icons/io5'
 import Dog1 from '../assets/images/Dog1.png'
 import Cat1 from '../assets/images/Cat1.png'
 import { Link } from 'react-router-dom'
+import { BsArrowLeft, BsClock, BsClockFill } from 'react-icons/bs'
+import { BiArrowToRight, BiMenuAltRight, BiRightArrow, BiRightArrowAlt } from 'react-icons/bi'
+import { GiArrowhead } from 'react-icons/gi'
+import { MdMenuOpen } from 'react-icons/md'
+import { FaAngleRight } from 'react-icons/fa6'
 
 const Home = () => {
     return (
@@ -88,11 +93,42 @@ const Home = () => {
                 </div>
 
                 <div className='w-1/2 bg-slate-400 p-5 h-full'>
-                    <div className='w-fit bg-white p-5 shadow-md border border-[#EAEBEE] rounded-md'>
-                        <div className='text-2xl text-[#0D1626] font-medium'>Upcoming Appointments</div>
-                        <table>
-                            <tr></tr>
-                        </table>
+                    <div className='w-full bg-white p-5 shadow-md border border-[#EAEBEE] rounded-md'>
+                        <div className='flex justify-between items-center'>
+                            <span className='text-2xl text-[#0D1626] font-medium'>Upcoming Appointments</span>
+                            <button className='text-secondary-500 font-medium flex gap-1 items-center hover:border-b-2 hover:border-secondary-500'>
+                                See All                                
+                                <FaAngleRight />
+                            </button>
+                        </div>
+                        <div className='w-full mt-5 flex flex-col gap-3'>
+                            <div className='border border-secondary-200 rounded-lg shadow-md bg-secondary-100 flex'>
+                                <div className='w-20 px-5 py-3 text-center font-medium border-r border-secondary-200'>
+                                    <div className='text-sm text-secondary-400'>AUG</div>
+                                    <div className='text-3xl'>28</div>                                    
+                                </div>
+                                <div className='px-5 py-3 font-medium'>
+                                    <div>Bathing: Shadow</div>
+                                    <div className='flex gap-3 items-center text-gray-500'>
+                                        <BsClockFill />
+                                        <span>10.00 AM - 11.00 AM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='border border-secondary-200 rounded-lg shadow-md bg-secondary-100 flex'>
+                                <div className='w-20 px-5 py-3 text-center font-medium border-r border-secondary-200'>
+                                    <div className='text-sm text-secondary-400'>SEP</div>
+                                    <div className='text-3xl'>01</div>                                    
+                                </div>
+                                <div className='px-5 py-3 font-medium'>
+                                    <div>Vaccination: Mew</div>
+                                    <div className='flex gap-3 items-center text-gray-500'>
+                                        <BsClockFill />
+                                        <span>10.00 AM - 11.00 AM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
