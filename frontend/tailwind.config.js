@@ -43,6 +43,19 @@ export default {
             700: '#6D7075',
             800: '#474A4E',
             900: '#222426',
+        },
+        status: {
+            pending: {
+                border: '#FFA500',
+                bg: '#FFEDCC',
+            },
+            accepted: {
+                border: '',
+            },
+            accepted_border: '#007BFF',
+            processing_border: '#FFD700',
+            ready_border: '#28A745',
+            delivering_border: '#20C997'
         }
       },
     },

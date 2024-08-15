@@ -4,10 +4,7 @@ import { IoFemaleOutline, IoMaleOutline } from 'react-icons/io5'
 import Dog1 from '../assets/images/Dog1.png'
 import Cat1 from '../assets/images/Cat1.png'
 import { Link } from 'react-router-dom'
-import { BsArrowLeft, BsClock, BsClockFill } from 'react-icons/bs'
-import { BiArrowToRight, BiMenuAltRight, BiRightArrow, BiRightArrowAlt } from 'react-icons/bi'
-import { GiArrowhead } from 'react-icons/gi'
-import { MdMenuOpen } from 'react-icons/md'
+import { BsClockFill } from 'react-icons/bs'
 import { FaAngleRight } from 'react-icons/fa6'
 
 const Home = () => {
@@ -31,27 +28,11 @@ const Home = () => {
             <div className='w-full flex gap-10 h-full'>
                 <div className='w-1/2 h-full'>
                     <div className='w-fit bg-white p-5 shadow-md border border-[#EAEBEE] rounded-md'>
-                        <div className='text-2xl text-[#0D1626] font-medium'>Pets</div>
+                        <div className='flex justify-between items-center'>
+                            <span className='text-2xl text-[#0D1626] font-medium'>Pets</span>
+                            <button className='text-sm text-white font-medium bg-secondary-500 py-2 px-3 rounded-md shadow-md hover:bg-secondary-400 hover:-translate-y-0.5 transition-all duration-300'>Add New Pet</button>
+                        </div>
                         <div className='flex flex-col gap-3 mt-3'>
-                            {/* <div className='flex gap-5 items-center'>
-                                <FaDog />
-                                <IoMaleOutline />
-                                <div className='w-10 h-10 bg-primary-400 rounded-full'>
-                                    <img src={Dog1} className='rounded-full w-full h-full' />
-                                </div>                                
-                                <Link>Shadow</Link>
-                                <span>Labradore</span>
-                            </div>
-                            <hr />
-                            <div className='flex gap-5 items-center'>
-                                <FaCat />
-                                <IoFemaleOutline />
-                                <div className='w-10 h-10 bg-primary-400 rounded-full'>
-                                    <img src={Cat1} className='rounded-full w-full h-full' />
-                                </div>
-                                <Link>Mew</Link>
-                                <span>Persian</span>
-                            </div> */}
                             <table>
                                 <tr className='border-b border-gray-200 text-gray-800 font-medium'>
                                     <td className='py-2 px-4'>
@@ -92,8 +73,8 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className='w-1/2 bg-slate-400 p-5 h-full'>
-                    <div className='w-full bg-white p-5 shadow-md border border-[#EAEBEE] rounded-md'>
+                <div className='w-1/2 bg-slate-400 h-full flex flex-col gap-10'>
+                    <div className='w-full h-2/3 bg-white p-5 shadow-md border border-[#EAEBEE] rounded-md'>
                         <div className='flex justify-between items-center'>
                             <span className='text-2xl text-[#0D1626] font-medium'>Upcoming Appointments</span>
                             <button className='text-secondary-500 font-medium flex gap-1 items-center hover:border-b-2 hover:border-secondary-500'>
@@ -101,7 +82,7 @@ const Home = () => {
                                 <FaAngleRight />
                             </button>
                         </div>
-                        <div className='w-full mt-5 flex flex-col gap-3'>
+                        <div className='w-full h-[15rem] mt-5 flex flex-col gap-3 overflow-auto'>
                             <div className='border border-secondary-200 rounded-lg shadow-md bg-secondary-100 flex'>
                                 <div className='w-20 px-5 py-3 text-center font-medium border-r border-secondary-200'>
                                     <div className='text-sm text-secondary-400'>AUG</div>
@@ -128,6 +109,38 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+
+                    <div className='w-full bg-white p-5 shadow-md border border-[#EAEBEE] rounded-md'>
+                        <div className='flex justify-between items-center'>
+                            <span className='text-2xl text-[#0D1626] font-medium'>Pending Orders</span>
+                            <button className='text-secondary-500 font-medium flex gap-1 items-center hover:border-b-2 hover:border-secondary-500'>
+                                See All                                
+                                <FaAngleRight />
+                            </button>
+                        </div>
+                        <div className='w-full h-[15rem] mt-5 flex flex-col gap-3 overflow-auto'>
+                            <table>
+                                <thead>
+                                    <tr className='text-sm text-gray-700 font-medium'>
+                                        <td>Ordered Date</td>
+                                        <td>Items</td>
+                                        <td>Total Price</td>
+                                        <td>Status</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>10/08/2024</td>
+                                        <td>Pedigree Dog Food: 1, Shampoo: 2</td>
+                                        <td>Rs. 5350.00</td>
+                                        <td>
+                                            <div className='w-fit px-3 py-1 rounded-full text-sm text-status-accepted_border font-semibold border border-status-accepted_border bg-status-pending-bg'>Pending</div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
