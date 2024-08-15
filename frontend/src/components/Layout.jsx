@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom'
 
 const Layout = () => {
     return (
-        <main className='bg-bgColor'>
+        <main className='bg-bgColor overflow-auto'>
             <Outlet />
         </main>
     )
