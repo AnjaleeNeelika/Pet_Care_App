@@ -114,7 +114,7 @@ const Home = () => {
 
                     <div className='w-full bg-white p-5 shadow-md border border-[#EAEBEE] rounded-md'>
                         <div className='flex justify-between items-center'>
-                            <span className='text-2xl text-[#0D1626] font-medium'>Pending Orders</span>
+                            <span className='text-2xl text-primary-500 font-medium'>Pending Orders</span>
                             <button className='text-secondary-500 font-medium flex gap-1 items-center hover:border-b-2 hover:border-secondary-500'>
                                 See All                                
                                 <FaAngleRight />
@@ -123,20 +123,52 @@ const Home = () => {
                         <div className='w-full h-[15rem] mt-5 flex flex-col gap-3 overflow-auto'>
                             <table>
                                 <thead>
-                                    <tr className='text-sm text-gray-700 font-medium'>
+                                    <tr className='text-sm text-gray-600 font-medium'>
                                         <td>Ordered Date</td>
                                         <td>Items</td>
                                         <td>Total Price</td>
                                         <td>Status</td>
                                     </tr>
                                 </thead>
-                                <tbody>
+                                <tbody className='text-gray-800'>
                                     <tr>
                                         <td>10/08/2024</td>
                                         <td>Pedigree Dog Food: 1, Shampoo: 2</td>
                                         <td>Rs. 5350.00</td>
-                                        <td>
-                                            <div className='w-fit px-3 py-1 rounded-full text-sm text-status-accepted_border font-semibold border border-status-accepted_border bg-status-pending-bg'>Pending</div>
+                                        <td className='py-1'>
+                                            <div className='w-fit px-3 py-1 rounded-full text-sm text-status-delivering-border font-semibold border border-status-delivering-border bg-status-delivering-bg'>Delivering</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>10/08/2024</td>
+                                        <td>Pedigree Dog Food: 1, Shampoo: 2</td>
+                                        <td>Rs. 5350.00</td>
+                                        <td className='py-1'>
+                                            <div className='w-fit px-3 py-1 rounded-full text-sm text-status-pending-border font-semibold border border-status-pending-border bg-status-pending-bg'>Pending</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>10/08/2024</td>
+                                        <td>Pedigree Dog Food: 1, Shampoo: 2</td>
+                                        <td>Rs. 5350.00</td>
+                                        <td className='py-1'>
+                                            <div className='w-fit px-3 py-1 rounded-full text-sm text-status-accepted-border font-semibold border border-status-accepted-border bg-status-accepted-bg'>Accepted</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>10/08/2024</td>
+                                        <td>Pedigree Dog Food: 1, Shampoo: 2</td>
+                                        <td>Rs. 5350.00</td>
+                                        <td className='py-1'>
+                                            <div className='w-fit px-3 py-1 rounded-full text-sm text-status-processing-border font-semibold border border-status-processing-border bg-status-processing-bg'>Processing</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>10/08/2024</td>
+                                        <td>Pedigree Dog Food: 1, Shampoo: 2</td>
+                                        <td>Rs. 5350.00</td>
+                                        <td className='py-1'>
+                                            <div className='w-fit px-3 py-1 rounded-full text-sm text-status-ready-border font-semibold border border-status-ready-border bg-status-ready-bg'>Ready</div>
                                         </td>
                                     </tr>
                                 </tbody>

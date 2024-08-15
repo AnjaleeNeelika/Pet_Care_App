@@ -7,7 +7,7 @@ export default {
     theme: {
       extend: {},
       colors:{
-        bgColor: '#FAFAFC',
+        bgColor: '#F3F3F3',
         white: '#FFFFFF',
         black: '#000000',
         borderForWhite: '#EAEBEE',
@@ -50,12 +50,21 @@ export default {
                 bg: '#FFEDCC',
             },
             accepted: {
-                border: '',
+                border: '#007BFF',
+                bg: '#C9E3FF',
             },
-            accepted_border: '#007BFF',
-            processing_border: '#FFD700',
-            ready_border: '#28A745',
-            delivering_border: '#20C997'
+            processing: {
+                border: '#FFD700',
+                bg: '#FDF7D1',
+            },
+            ready: {
+                border: '#28A745',
+                bg: '#D1FFDC',
+            },
+            delivering: {
+                border: '#20C997',
+                bg: '#CFFFF0',
+            },
         }
       },
     },
