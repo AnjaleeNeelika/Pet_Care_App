@@ -7,7 +7,7 @@ export default {
     theme: {
       extend: {},
       colors:{
-        bgColor: '#FAFAFC',
+        bgColor: '#F3F3F3',
         white: '#FFFFFF',
         black: '#000000',
         borderForWhite: '#EAEBEE',
