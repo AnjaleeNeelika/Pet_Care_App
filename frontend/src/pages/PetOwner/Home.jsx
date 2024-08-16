@@ -27,12 +27,12 @@ const Home = () => {
             
             <div className='w-full flex gap-10 h-full'>
                 <div className='w-1/2 h-full'>
-                    <div className='w-fit bg-white p-5 shadow-md border border-[#EAEBEE] rounded-md'>
+                    <div className='w-full bg-white p-5 shadow-md border border-[#EAEBEE] rounded-md'>
                         <div className='flex justify-between items-center'>
                             <span className='text-2xl text-[#0D1626] font-medium'>Pets</span>
                             <button className='text-sm text-white font-medium bg-secondary-500 py-2 px-3 rounded-md shadow-md hover:bg-secondary-400 hover:-translate-y-0.5 transition-all duration-300'>Add New Pet</button>
                         </div>
-                        <div className='flex flex-col gap-3 mt-3'>
+                        <div className='h-[15rem] flex flex-col gap-3 mt-3'>
                             <table>
                                 <tr className='border-b border-gray-200 text-gray-800 font-medium'>
                                     <td className='py-2 px-4'>
@@ -71,10 +71,12 @@ const Home = () => {
                             </table>
                         </div>
                     </div>
+
+                    <div className='w-full bg-white'></div>
                 </div>
 
                 <div className='w-1/2 bg-slate-400 h-full flex flex-col gap-10'>
-                    <div className='w-full h-2/3 bg-white p-5 shadow-md border border-[#EAEBEE] rounded-md'>
+                    <div className='w-full bg-white p-5 shadow-md border border-[#EAEBEE] rounded-md'>
                         <div className='flex justify-between items-center'>
                             <span className='text-2xl text-[#0D1626] font-medium'>Upcoming Appointments</span>
                             <button className='text-secondary-500 font-medium flex gap-1 items-center hover:border-b-2 hover:border-secondary-500'>

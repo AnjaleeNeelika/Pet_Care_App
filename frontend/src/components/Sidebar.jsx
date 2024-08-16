@@ -34,15 +34,15 @@ const Sidebar = ({ menus }) => {
                                 {React.createElement(menu?.icon, { size: "20" })}
                             </div>
                             <span 
-                            style={{
-                                transitionDelay: `${i + 3}00ms`,
-                            }}
+                                style={{
+                                    transitionDelay: `${i + 3}00ms`,
+                                }}
                                 className={`text-lg font-medium whitespace-pre duration-500 ${!open && 'opacity-0 translate-x-28 overflow-hidden'}`}
                             >
                                 {menu?.name}
                             </span>
                             <span 
-                                className={`${open && 'hidden'} absolute left-48 bg-indigo-100 font-semibold whitespace-pre text-gray-900 rounded-md drop-shadow-lg px-0 py-0 w-0 overflow-hidden group-hover:px-2 group-hover:py-1 group-hover:left-16 group-hover:duration-300 group-hover:w-fit group-hover:shadow-lg`}
+                                className={`${open && 'hidden'} absolute left-48 bg-primary-100 font-semibold whitespace-pre text-gray-900 rounded-md drop-shadow-lg px-0 py-0 ml-2 w-0 overflow-hidden group-hover:px-2 group-hover:py-1 group-hover:left-16 group-hover:duration-300 group-hover:w-fit group-hover:shadow-lg group-hover:border group-hover:border-primary-200`}
                             >
                                 {menu?.name}
                             </span>
