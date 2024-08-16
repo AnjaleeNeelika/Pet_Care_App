@@ -1,6 +1,6 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
-import PetOwnerSidebar from '../components/PetOwner/PetOwnerSidebar'
+import PetOwnerSidebar from '../../components/PetOwner/PetOwnerSidebar'
 
 const OwnerDashboard = () => {
     return (

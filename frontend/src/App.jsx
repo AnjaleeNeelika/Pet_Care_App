@@ -1,18 +1,19 @@
 import React from 'react'
 import { Route, Router, Routes } from 'react-router-dom'
-import Home from './pages/Home'
-import Clinic from './pages/Clinic'
 import OwnerLogin from './pages/OwnerLogin'
 import OwnerRegistration from './pages/OwnerRegistration'
-import PetRegistration from './pages/PetRegistration'
-import Pharmacy from './pages/Pharmacy'
-import Store from './pages/Store'
-import ShowPets from './pages/ShowPets'
-import Grooming from './pages/Grooming'
 import RegistrationConfirmationCode from './pages/RegistrationConfirmationCode'
 import LandingPage from './pages/LandingPage'
 import Layout from './components/Layout'
-import OwnerDashboard from './pages/OwnerDashboard'
+import OwnerDashboard from './pages/PetOwner/OwnerDashboard'
+import Home from './pages/PetOwner/Home'
+import Clinic from './pages/PetOwner/Clinic'
+import PetRegistration from './pages/PetOwner/PetRegistration'
+import Pharmacy from './pages/PetOwner/Pharmacy'
+import Grooming from './pages/PetOwner/Grooming'
+import Store from './pages/PetOwner/Store'
+import ShowPets from './pages/PetOwner/ShowPets'
+
 
 const App = () => {
     return (

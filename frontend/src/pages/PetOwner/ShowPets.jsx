@@ -1,10 +1,7 @@
 import React from 'react'
-import Cat1 from '../assets/images/Cat1.png'
-import Dog1 from '../assets/images/Dog1.png'
-import { CgAdd, CgAddR } from 'react-icons/cg'
-import { BiAddToQueue } from 'react-icons/bi'
+import Cat1 from '../../assets/images/Cat1.png'
+import Dog1 from '../../assets/images/Dog1.png'
 import { GrAdd } from 'react-icons/gr'
-import { IoAdd } from 'react-icons/io5'
 
 const ShowPets = () => {
     return (
@@ -13,7 +10,7 @@ const ShowPets = () => {
                 <div className='flex flex-col gap-5 w-full'>
                     <h1 className='text-[#2a2f4f]'>Your Pets</h1>
                     <div className='flex flex-auto gap-5 flex-wrap'>
-                        <div className='bg-[#D7D5FC] px-7 py-5 rounded-md shadow-md flex gap-3 items-center max-w-[300px] w-full h-64'>
+                        <div className='bg-white border border-gray-300 p-5 rounded-md shadow-md flex gap-3 items-center max-w-[300px] w-full h-64'>
                             <img src={Cat1} alt="" className='max-w-32' />
                             <div className='flex flex-col gap-3'>
                                 <h2>Mew</h2>
@@ -26,7 +23,7 @@ const ShowPets = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='bg-[#D7D5FC] px-7 py-5 rounded-md shadow-md flex gap-3 items-center max-w-[300px] w-full'>
+                        <div className='bg-white border border-gray-300 p-5 rounded-md shadow-md flex gap-3 items-center max-w-[300px] w-full'>
                             <img src={Dog1} alt="" className='max-w-32' />
                             <div className='flex flex-col gap-3'>
                                 <h2>Shadow</h2>
