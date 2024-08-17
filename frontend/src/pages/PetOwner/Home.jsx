@@ -75,7 +75,7 @@ const Home = () => {
                     <div className='w-full bg-white'></div>
                 </div>
 
-                <div className='w-1/2 bg-slate-400 h-full flex flex-col gap-10'>
+                <div className='w-1/2 h-full flex flex-col gap-10'>
                     <div className='w-full bg-white p-5 shadow-md border border-[#EAEBEE] rounded-md'>
                         <div className='flex justify-between items-center'>
                             <span className='text-2xl text-[#0D1626] font-medium'>Upcoming Appointments</span>
