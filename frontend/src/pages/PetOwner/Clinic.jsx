@@ -6,7 +6,7 @@ const Clinic = () => {
     return (
         <section className='flex justify-between gap-20'>
             <div className='w-1/2'>
-                <div className='w-full flex gap-10'>
+                <div className='w-full flex gap-10 h-fit'>
                     <div className='bg-primary-200 rounded-md shadow-md p-7 w-72 border border-gray-300 text-center'>
                         <div className='w-52 h-52 bg-slate-300 rounded-full shadow-md border border-slate-400 mx-auto'>
                             <img src={MaleAvatar} className='w-full' />
@@ -28,38 +28,42 @@ const Clinic = () => {
                     </div>
                 </div> 
 
-                <div className='bg-white w-full py-5 px-7 mt-10 rounded-md shadow-md border-2 border-borderForWhite'>
-                    <div className='text-2xl text-[#0D1626] font-medium'>Notifications</div>    
-                </div>               
+                              
             </div>
-            <div className='w-full max-h-[30rem] bg-white py-5 px-7 rounded-md shadow-md border-2 border-borderForWhite'>
-                <div className='text-2xl text-[#0D1626] font-medium'>Upcoming Appointments</div>
-                <div className='mt-3'>
-                    <table className='w-full'>
-                        <thead>
-                            <tr className='text-sm text-gray-600 font-medium'>
-                                <td>Pet</td>
-                                <td>Doctor</td>
-                                <td>Reason</td>
-                                <td>Date and Time</td>
-                                <td>Remaining</td>
-                                <td></td>
-                            </tr>                            
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Shadow</td>
-                                <td>Dr. Olivia Lee</td>
-                                <td>Vaccination</td>
-                                <td>20/08/2024</td>
-                                <td>2 Days</td>
-                                <td className='flex justify-end'>
-                                    <button className='text-sm bg-secondary-500 text-white font-semibold px-3 py-1.5 rounded-full hover:bg-secondary-400 shadow-md'>Set Reminder</button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+            <div className='w-1/2'>
+                <div className='w-full max-h-[30rem] h-full bg-white py-5 px-7 rounded-md shadow-md border-2 border-borderForWhite'>
+                    <div className='text-2xl text-[#0D1626] font-medium'>Upcoming Appointments</div>
+                    <div className='mt-3'>
+                        <table className='w-full'>
+                            <thead>
+                                <tr className='text-sm text-gray-600 font-medium'>
+                                    <td>Pet</td>
+                                    <td>Doctor</td>
+                                    <td>Reason</td>
+                                    <td>Date and Time</td>
+                                    <td>Remaining</td>
+                                    <td></td>
+                                </tr>                            
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Shadow</td>
+                                    <td>Dr. Olivia Lee</td>
+                                    <td>Vaccination</td>
+                                    <td>20/08/2024</td>
+                                    <td>2 Days</td>
+                                    <td className='flex justify-end'>
+                                        <button className='text-sm bg-secondary-500 text-white font-semibold px-3 py-1.5 rounded-full hover:bg-secondary-400 shadow-md'>Set Reminder</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>                
+
+                <div className='bg-white w-full h-full max-h-[22rem] py-5 px-7 mt-10 rounded-md shadow-md border-2 border-borderForWhite'>
+                    <div className='text-2xl text-[#0D1626] font-medium'>Notifications</div>    
+                </div> 
             </div>
         </section>
     )
