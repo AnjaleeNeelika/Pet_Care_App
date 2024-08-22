@@ -4,7 +4,7 @@ import FemaleAvatar from '../../assets/images/avatar-anisha.png'
 
 const Clinic = () => {
     return (
-        <section className='flex justify-between gap-20'>
+        <section className='flex justify-between gap-20 px-12 py-10'>
             <div className='w-1/2'>
                 <div className='w-full flex gap-10 h-fit'>
                     <div className='bg-primary-200 rounded-md shadow-md p-7 w-72 border border-gray-300 text-center'>

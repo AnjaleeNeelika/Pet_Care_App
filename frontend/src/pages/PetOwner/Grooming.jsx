@@ -2,7 +2,7 @@ import React from 'react';
 
 const Grooming = () => {
     return (
-        <section className='w-full h-full flex justify-center items-center gap-10'>
+        <section className='w-full h-full flex justify-center items-center gap-10 px-12 py-10'>
             <div className='w-1/2 h-full flex flex-col gap-10'>
                 <div className='h-1/3 bg-white py-5 px-7 rounded-md shadow-md border-2 border-borderForWhite'>
                     <div className='text-2xl text-[#0D1626] font-medium'>Upcoming Events</div>
