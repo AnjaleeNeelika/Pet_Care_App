@@ -9,7 +9,7 @@ import { FaAngleRight } from 'react-icons/fa6'
 
 const Home = () => {
     return (
-        <section className='w-full h-full flex flex-col gap-10'>
+        <section className='w-full h-full px-12 py-10 flex flex-col gap-10'>
             <div className='flex justify-center items-center gap-10 h-fit'>
                 <div className='w-full h-full bg-[#D7D5FC] p-5 border border-[#ACADE9] rounded-md shadow-md'>
                     <div className='text-2xl text-purple-900'>Registered Pets</div>

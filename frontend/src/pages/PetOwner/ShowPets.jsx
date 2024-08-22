@@ -5,7 +5,7 @@ import { GrAdd } from 'react-icons/gr'
 
 const ShowPets = () => {
     return (
-        <section className='flex flex-auto gap-5'>
+        <section className='flex flex-auto gap-5 px-12 py-10'>
             <div className='flex flex-col gap-5 w-1/2 min-w-[300px]'>            
                 <div className='flex flex-col gap-5 w-full'>
                     <h1 className='text-[#2a2f4f]'>Your Pets</h1>
