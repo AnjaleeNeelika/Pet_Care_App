@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import { Link } from 'react-router-dom'
+import Pets1 from '../assets/images/Pets1.png'
 import CatAndDog3 from '../assets/images/Cat&Dog3.png'
 import PetClinicImg1 from '../assets/images/pet-clinic-1.jpg'
 import PetPharmacyImg1 from "../assets/images/pet-pharmacy-2.jpg"
@@ -29,7 +30,7 @@ const LandingPage = () => {
                         </Link>
                     </div>                      
                 </div>
-                <img src={CatAndDog3} className='h-full w-auto' />
+                <img src={Pets1} className='h-full w-auto' />
             </div>
 
             <div className='w-full p-20'>
