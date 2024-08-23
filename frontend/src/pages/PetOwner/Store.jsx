@@ -19,7 +19,7 @@ const Store = () => {
             <div className='py-5 px-7'>
                 <div className='w-full flex justify-between items-center bg-white rounded-md shadow-md px-7 py-5'>
                     <div className='w-full flex justify-between items-center'>
-                        <div className='text-2xl text-[#0D1626] font-medium'>Upcoming Events</div>
+                        <div className='text-2xl text-[#0D1626] font-medium'>Pet Foods</div>
                         <button className='text-gray-400 flex gap-2 justify-center items-center hover:border-b hover:border-gray-300 hover:-translate-y-0.5 transition-all duration-200'>
                             See More
                             <BsArrowRight />
