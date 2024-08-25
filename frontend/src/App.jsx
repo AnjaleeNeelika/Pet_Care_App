@@ -12,7 +12,7 @@ import PetRegistration from './pages/PetOwner/PetRegistration'
 import Pharmacy from './pages/PetOwner/Pharmacy'
 import Grooming from './pages/PetOwner/Grooming'
 import Store from './pages/PetOwner/Store'
-import ShowPets from './pages/PetOwner/ShowPets'
+import AllPets from './pages/PetOwner/AllPets'
 
 
 const App = () => {
@@ -27,7 +27,7 @@ const App = () => {
                     <Route path='pharmacy' element={<Pharmacy />} />
                     <Route path='grooming' element={<Grooming />} />
                     <Route path='pet-store' element={<Store />} />
-                    <Route path='pets' element={<ShowPets />} />
+                    <Route path='pets' element={<AllPets />} />
                 </Route>
                 
                 <Route path='owner-login' element={<OwnerLogin />} />

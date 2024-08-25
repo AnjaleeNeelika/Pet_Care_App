@@ -13,6 +13,11 @@ import PlayingRodWithFeathers1 from '../../assets/images/playing_rod_with_feathe
 import PlayingRopeWithBall1 from '../../assets/images/playing_rope_with_rubber_ball.png'
 import RubberBone1 from '../../assets/images/rubber_bone.png'
 import StuffedPuppyToy1 from '../../assets/images/stuffed_puppy.png'
+import Shampoo1 from '../../assets/images/duke_shampoo.png'
+import HairBrush1 from '../../assets/images/hair_brush_for_dogs1.png'
+import PetOralKit1 from '../../assets/images/pet_oral_care_kit.png'
+import PetGroomingScissors1 from '../../assets/images/pet_grooming_scissors.png'
+import PetHairClipper1 from '../../assets/images/pet_hair_clipper.png'
 
 const Store = () => {
     return (
@@ -97,47 +102,47 @@ const Store = () => {
                     <div className='flex justify-start items-center gap-10 mt-5'>
                         <div className='peer bg-white rounded-md shadow-md border-2 border-borderForWhite p-5 w-60 h-96 flex flex-col justify-center cursor-pointer hover:scale-110 hover:border-secondary-200 hover:border-3 transition-transform duration-500'>
                             <div className='w-full h-52 mx-auto'>
-                                <img src={CatFoods1} className='h-full w-fit mx-auto object-contain' />
+                                <img src={Shampoo1} className='h-full w-fit mx-auto object-contain' />
                             </div>
                             <div className='text-center mt-3'> 
-                                <div className='text-lg font-medium'>North Paw Grain Free</div>
+                                <div className='text-lg font-medium'>Duke & Daisy Pet Shampoo (Vanilla Bean)</div>
                                 <div className='text-sm font-medium'>Rs. 1500.00</div>
                             </div>
                         </div>
                         <div className='peer bg-white rounded-md shadow-md border-2 border-borderForWhite p-5 w-60 h-96 flex flex-col justify-center cursor-pointer hover:scale-110 hover:border-secondary-200 hover:border-3 transition-transform duration-500'>
                             <div className='w-full h-52 mx-auto'>
-                                <img src={DogFoods1} className='h-full w-fit mx-auto object-contain' />
+                                <img src={HairBrush1} className='h-full w-fit mx-auto object-contain' />
                             </div>
                             <div className='text-center mt-3'> 
-                                <div className='text-lg font-medium'>EVOLVE Chicken Flavoured</div>
+                                <div className='text-lg font-medium'>Pet Hair Brush</div>
                                 <div className='text-sm font-medium'>Rs. 2000.00</div>
                             </div>
                         </div>
                         <div className='peer bg-white rounded-md shadow-md border-2 border-borderForWhite p-5 w-60 h-96 flex flex-col justify-center cursor-pointer hover:scale-110 hover:border-secondary-200 hover:border-3 transition-transform duration-500'>
                             <div className='w-full h-52 mx-auto'>
-                                <img src={DogFoods2} className='h-full w-fit mx-auto object-contain' />
+                                <img src={PetOralKit1} className='h-full w-fit mx-auto object-contain' />
                             </div>
                             <div className='text-center mt-3'> 
-                                <div className='text-lg font-medium'>Pedigree - Adult</div>
-                                <div className='text-sm font-medium'>Rs. 2350.00</div>
+                                <div className='text-lg font-medium'>FreshBreath Oral Care Kit</div>
+                                <div className='text-sm font-medium'>Rs. 1730.00</div>
                             </div>
                         </div>
                         <div className='peer bg-white rounded-md shadow-md border-2 border-borderForWhite p-5 w-60 h-96 flex flex-col justify-center cursor-pointer hover:scale-110 hover:border-secondary-200 hover:border-3 transition-transform duration-500'>
                             <div className='w-full h-52 mx-auto'>
-                                <img src={CatFoods2} className='h-full w-fit mx-auto object-contain' />
+                                <img src={PetGroomingScissors1} className='h-full w-fit mx-auto object-contain' />
                             </div>
                             <div className='text-center mt-3'> 
-                                <div className='text-lg font-medium'>Whiskas for Kittens</div>
-                                <div className='text-sm font-medium'>Rs. 1200.00</div>
-                            </div>
-                        </div>
-                        <div className='peer bg-white rounded-md shadow-md border-2 border-borderForWhite p-5 w-60 h-96 flex flex-col justify-center cursor-pointer hover:scale-110 hover:border-secondary-200 hover:border-3 transition-transform duration-500'>
-                            <div className='w-full h-52 mx-auto'>
-                                <img src={DogFoods3} className='h-full w-fit mx-auto object-contain' />
-                            </div>
-                            <div className='text-center mt-3'> 
-                                <div className='text-lg font-medium'>Brit Premium</div>
+                                <div className='text-lg font-medium'>Pet Grooming Scissors</div>
                                 <div className='text-sm font-medium'>Rs. 1400.00</div>
+                            </div>
+                        </div>
+                        <div className='peer bg-white rounded-md shadow-md border-2 border-borderForWhite p-5 w-60 h-96 flex flex-col justify-center cursor-pointer hover:scale-110 hover:border-secondary-200 hover:border-3 transition-transform duration-500'>
+                            <div className='w-full h-52 mx-auto'>
+                                <img src={PetHairClipper1} className='h-full w-fit mx-auto object-contain' />
+                            </div>
+                            <div className='text-center mt-3'> 
+                                <div className='text-lg font-medium'>Pulse iON Pet Hair Clipper</div>
+                                <div className='text-sm font-medium'>Rs. 7400.00</div>
                             </div>
                         </div>
                     </div>

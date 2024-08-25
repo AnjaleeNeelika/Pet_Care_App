@@ -34,40 +34,42 @@ const Home = () => {
                         </div>
                         <div className='h-[15rem] flex flex-col gap-3 mt-3'>
                             <table>
-                                <tr className='border-b border-gray-200 text-gray-800 font-medium'>
-                                    <td className='py-2 px-4'>
-                                        <FaDog />
-                                    </td>
-                                    <td className='py-2 px-4'>
-                                        <IoMaleOutline />
-                                    </td>
-                                    <td className='py-2 px-4'>
-                                        <div className='w-10 h-10 bg-primary-300 rounded-full object-contain overflow-hidden'>
-                                            <img src={Dog1} className='rounded-full w-full h-fit' />
-                                        </div> 
-                                    </td>
-                                    <td className='py-2 px-4 text-secondary-400'>
-                                        <Link>Shadow</Link>
-                                    </td>
-                                    <td className='py-2 px-4'>Labradore</td>
-                                </tr>
-                                <tr className='border-b border-gray-200 text-gray-800 font-medium'>
-                                    <td className='py-2 px-4'>
-                                        <FaCat />
-                                    </td>
-                                    <td className='py-2 px-4'>
-                                        <IoFemaleOutline />
-                                    </td>
-                                    <td className='py-2 px-4'>
-                                        <div className='w-10 h-10 bg-primary-300 rounded-full object-contain overflow-hidden'>
-                                            <img src={Cat1} className='rounded-full w-full h-fit' />
-                                        </div> 
-                                    </td>
-                                    <td className='py-2 px-4 text-secondary-400'>
-                                        <Link>Mew</Link>
-                                    </td>
-                                    <td className='py-2 px-4'>Persian</td>
-                                </tr>
+                                <tbody>
+                                    <tr className='border-b border-gray-200 text-gray-800 font-medium'>
+                                        <td className='py-2 px-4'>
+                                            <FaDog />
+                                        </td>
+                                        <td className='py-2 px-4'>
+                                            <IoMaleOutline />
+                                        </td>
+                                        <td className='py-2 px-4'>
+                                            <div className='w-10 h-10 bg-primary-300 rounded-full object-contain overflow-hidden'>
+                                                <img src={Dog1} className='rounded-full w-full h-fit' />
+                                            </div> 
+                                        </td>
+                                        <td className='py-2 px-4 text-secondary-400'>
+                                            <Link>Shadow</Link>
+                                        </td>
+                                        <td className='py-2 px-4'>Labradore</td>
+                                    </tr>
+                                    <tr className='border-b border-gray-200 text-gray-800 font-medium'>
+                                        <td className='py-2 px-4'>
+                                            <FaCat />
+                                        </td>
+                                        <td className='py-2 px-4'>
+                                            <IoFemaleOutline />
+                                        </td>
+                                        <td className='py-2 px-4'>
+                                            <div className='w-10 h-10 bg-primary-300 rounded-full object-contain overflow-hidden'>
+                                                <img src={Cat1} className='rounded-full w-full h-fit' />
+                                            </div> 
+                                        </td>
+                                        <td className='py-2 px-4 text-secondary-400'>
+                                            <Link>Mew</Link>
+                                        </td>
+                                        <td className='py-2 px-4'>Persian</td>
+                                    </tr>
+                                </tbody>
                             </table>
                         </div>
                     </div>
