@@ -8,6 +8,11 @@ import CatFoods2 from '../../assets/images/CatFoods2.png'
 import DogFoods1 from '../../assets/images/DogFoods1.png'
 import DogFoods2 from '../../assets/images/DogFoods2.png'
 import DogFoods3 from '../../assets/images/DogFoods3.png'
+import CatTreeWithScratchingPost1 from '../../assets/images/cat_tree_with_scratching_post.png'
+import PlayingRodWithFeathers1 from '../../assets/images/playing_rod_with_feathers.png'
+import PlayingRopeWithBall1 from '../../assets/images/playing_rope_with_rubber_ball.png'
+import RubberBone1 from '../../assets/images/rubber_bone.png'
+import StuffedPuppyToy1 from '../../assets/images/stuffed_puppy.png'
 
 const Store = () => {
     return (
@@ -31,7 +36,7 @@ const Store = () => {
                         </button>
                     </div>
                     <div className='flex justify-start items-center gap-10 mt-5'>
-                        <div className='peer bg-white rounded-md shadow-md border-2 border-borderForWhite p-5 w-60 h-80 flex flex-col justify-between cursor-pointer hover:scale-110 hover:border-secondary-200 hover:border-3 transition-transform duration-500'>
+                        <div className='peer bg-white rounded-md shadow-md border-2 border-borderForWhite p-5 w-60 h-96 flex flex-col justify-center cursor-pointer hover:scale-110 hover:border-secondary-200 hover:border-3 transition-transform duration-500'>
                             <div className='w-full h-52 mx-auto'>
                                 <img src={CatFoods1} className='h-full w-fit mx-auto object-contain' />
                             </div>
@@ -40,7 +45,7 @@ const Store = () => {
                                 <div className='text-sm font-medium'>Rs. 1500.00</div>
                             </div>
                         </div>
-                        <div className='peer bg-white rounded-md shadow-md border-2 border-borderForWhite p-5 w-60 h-80 flex flex-col justify-between cursor-pointer hover:scale-110 hover:border-secondary-200 hover:border-3 transition-transform duration-500'>
+                        <div className='peer bg-white rounded-md shadow-md border-2 border-borderForWhite p-5 w-60 h-96 flex flex-col justify-center cursor-pointer hover:scale-110 hover:border-secondary-200 hover:border-3 transition-transform duration-500'>
                             <div className='w-full h-52 mx-auto'>
                                 <img src={DogFoods1} className='h-full w-fit mx-auto object-contain' />
                             </div>
@@ -49,7 +54,7 @@ const Store = () => {
                                 <div className='text-sm font-medium'>Rs. 2000.00</div>
                             </div>
                         </div>
-                        <div className='peer bg-white rounded-md shadow-md border-2 border-borderForWhite p-5 w-60 h-80 flex flex-col justify-between cursor-pointer hover:scale-110 hover:border-secondary-200 hover:border-3 transition-transform duration-500'>
+                        <div className='peer bg-white rounded-md shadow-md border-2 border-borderForWhite p-5 w-60 h-96 flex flex-col justify-center cursor-pointer hover:scale-110 hover:border-secondary-200 hover:border-3 transition-transform duration-500'>
                             <div className='w-full h-52 mx-auto'>
                                 <img src={DogFoods2} className='h-full w-fit mx-auto object-contain' />
                             </div>
@@ -58,7 +63,7 @@ const Store = () => {
                                 <div className='text-sm font-medium'>Rs. 2350.00</div>
                             </div>
                         </div>
-                        <div className='peer bg-white rounded-md shadow-md border-2 border-borderForWhite p-5 w-60 h-80 flex flex-col justify-between cursor-pointer hover:scale-110 hover:border-secondary-200 hover:border-3 transition-transform duration-500'>
+                        <div className='peer bg-white rounded-md shadow-md border-2 border-borderForWhite p-5 w-60 h-96 flex flex-col justify-center cursor-pointer hover:scale-110 hover:border-secondary-200 hover:border-3 transition-transform duration-500'>
                             <div className='w-full h-52 mx-auto'>
                                 <img src={CatFoods2} className='h-full w-fit mx-auto object-contain' />
                             </div>
@@ -67,7 +72,7 @@ const Store = () => {
                                 <div className='text-sm font-medium'>Rs. 1200.00</div>
                             </div>
                         </div>
-                        <div className='peer bg-white rounded-md shadow-md border-2 border-borderForWhite p-5 w-60 h-80 flex flex-col justify-between cursor-pointer hover:scale-110 hover:border-secondary-200 hover:border-3 transition-transform duration-500'>
+                        <div className='peer bg-white rounded-md shadow-md border-2 border-borderForWhite p-5 w-60 h-96 flex flex-col justify-center cursor-pointer hover:scale-110 hover:border-secondary-200 hover:border-3 transition-transform duration-500'>
                             <div className='w-full h-52 mx-auto'>
                                 <img src={DogFoods3} className='h-full w-fit mx-auto object-contain' />
                             </div>
@@ -90,7 +95,7 @@ const Store = () => {
                         </button>
                     </div>
                     <div className='flex justify-start items-center gap-10 mt-5'>
-                        <div className='peer bg-white rounded-md shadow-md border-2 border-borderForWhite p-5 w-60 h-80 flex flex-col justify-between cursor-pointer hover:scale-110 hover:border-secondary-200 hover:border-3 transition-transform duration-500'>
+                        <div className='peer bg-white rounded-md shadow-md border-2 border-borderForWhite p-5 w-60 h-96 flex flex-col justify-center cursor-pointer hover:scale-110 hover:border-secondary-200 hover:border-3 transition-transform duration-500'>
                             <div className='w-full h-52 mx-auto'>
                                 <img src={CatFoods1} className='h-full w-fit mx-auto object-contain' />
                             </div>
@@ -99,7 +104,7 @@ const Store = () => {
                                 <div className='text-sm font-medium'>Rs. 1500.00</div>
                             </div>
                         </div>
-                        <div className='peer bg-white rounded-md shadow-md border-2 border-borderForWhite p-5 w-60 h-80 flex flex-col justify-between cursor-pointer hover:scale-110 hover:border-secondary-200 hover:border-3 transition-transform duration-500'>
+                        <div className='peer bg-white rounded-md shadow-md border-2 border-borderForWhite p-5 w-60 h-96 flex flex-col justify-center cursor-pointer hover:scale-110 hover:border-secondary-200 hover:border-3 transition-transform duration-500'>
                             <div className='w-full h-52 mx-auto'>
                                 <img src={DogFoods1} className='h-full w-fit mx-auto object-contain' />
                             </div>
@@ -108,7 +113,7 @@ const Store = () => {
                                 <div className='text-sm font-medium'>Rs. 2000.00</div>
                             </div>
                         </div>
-                        <div className='peer bg-white rounded-md shadow-md border-2 border-borderForWhite p-5 w-60 h-80 flex flex-col justify-between cursor-pointer hover:scale-110 hover:border-secondary-200 hover:border-3 transition-transform duration-500'>
+                        <div className='peer bg-white rounded-md shadow-md border-2 border-borderForWhite p-5 w-60 h-96 flex flex-col justify-center cursor-pointer hover:scale-110 hover:border-secondary-200 hover:border-3 transition-transform duration-500'>
                             <div className='w-full h-52 mx-auto'>
                                 <img src={DogFoods2} className='h-full w-fit mx-auto object-contain' />
                             </div>
@@ -117,7 +122,7 @@ const Store = () => {
                                 <div className='text-sm font-medium'>Rs. 2350.00</div>
                             </div>
                         </div>
-                        <div className='peer bg-white rounded-md shadow-md border-2 border-borderForWhite p-5 w-60 h-80 flex flex-col justify-between cursor-pointer hover:scale-110 hover:border-secondary-200 hover:border-3 transition-transform duration-500'>
+                        <div className='peer bg-white rounded-md shadow-md border-2 border-borderForWhite p-5 w-60 h-96 flex flex-col justify-center cursor-pointer hover:scale-110 hover:border-secondary-200 hover:border-3 transition-transform duration-500'>
                             <div className='w-full h-52 mx-auto'>
                                 <img src={CatFoods2} className='h-full w-fit mx-auto object-contain' />
                             </div>
@@ -126,7 +131,7 @@ const Store = () => {
                                 <div className='text-sm font-medium'>Rs. 1200.00</div>
                             </div>
                         </div>
-                        <div className='peer bg-white rounded-md shadow-md border-2 border-borderForWhite p-5 w-60 h-80 flex flex-col justify-between cursor-pointer hover:scale-110 hover:border-secondary-200 hover:border-3 transition-transform duration-500'>
+                        <div className='peer bg-white rounded-md shadow-md border-2 border-borderForWhite p-5 w-60 h-96 flex flex-col justify-center cursor-pointer hover:scale-110 hover:border-secondary-200 hover:border-3 transition-transform duration-500'>
                             <div className='w-full h-52 mx-auto'>
                                 <img src={DogFoods3} className='h-full w-fit mx-auto object-contain' />
                             </div>
@@ -149,49 +154,49 @@ const Store = () => {
                         </button>
                     </div>
                     <div className='flex justify-start items-center gap-10 mt-5'>
-                        <div className='peer bg-white rounded-md shadow-md border-2 border-borderForWhite p-5 w-60 h-80 flex flex-col justify-between cursor-pointer hover:scale-110 hover:border-secondary-200 hover:border-3 transition-transform duration-500'>
+                        <div className='peer bg-white rounded-md shadow-md border-2 border-borderForWhite p-5 w-60 h-96 flex flex-col justify-center cursor-pointer hover:scale-110 hover:border-secondary-200 hover:border-3 transition-transform duration-500'>
                             <div className='w-full h-52 mx-auto'>
-                                <img src={CatFoods1} className='h-full w-fit mx-auto object-contain' />
+                                <img src={CatTreeWithScratchingPost1} className='h-full w-fit mx-auto object-contain' />
                             </div>
                             <div className='text-center mt-3'> 
-                                <div className='text-lg font-medium'>North Paw Grain Free</div>
-                                <div className='text-sm font-medium'>Rs. 1500.00</div>
+                                <div className='text-lg font-medium'>Cat Tree with Scratching Post</div>
+                                <div className='text-sm font-medium'>Rs. 8300.00</div>
                             </div>
                         </div>
-                        <div className='peer bg-white rounded-md shadow-md border-2 border-borderForWhite p-5 w-60 h-80 flex flex-col justify-between cursor-pointer hover:scale-110 hover:border-secondary-200 hover:border-3 transition-transform duration-500'>
+                        <div className='peer bg-white rounded-md shadow-md border-2 border-borderForWhite p-5 w-60 h-96 flex flex-col justify-center cursor-pointer hover:scale-110 hover:border-secondary-200 hover:border-3 transition-transform duration-500'>
                             <div className='w-full h-52 mx-auto'>
-                                <img src={DogFoods1} className='h-full w-fit mx-auto object-contain' />
+                                <img src={PlayingRodWithFeathers1} className='h-full w-fit mx-auto object-contain' />
                             </div>
                             <div className='text-center mt-3'> 
-                                <div className='text-lg font-medium'>EVOLVE Chicken Flavoured</div>
-                                <div className='text-sm font-medium'>Rs. 2000.00</div>
-                            </div>
-                        </div>
-                        <div className='peer bg-white rounded-md shadow-md border-2 border-borderForWhite p-5 w-60 h-80 flex flex-col justify-between cursor-pointer hover:scale-110 hover:border-secondary-200 hover:border-3 transition-transform duration-500'>
-                            <div className='w-full h-52 mx-auto'>
-                                <img src={DogFoods2} className='h-full w-fit mx-auto object-contain' />
-                            </div>
-                            <div className='text-center mt-3'> 
-                                <div className='text-lg font-medium'>Pedigree - Adult</div>
-                                <div className='text-sm font-medium'>Rs. 2350.00</div>
-                            </div>
-                        </div>
-                        <div className='peer bg-white rounded-md shadow-md border-2 border-borderForWhite p-5 w-60 h-80 flex flex-col justify-between cursor-pointer hover:scale-110 hover:border-secondary-200 hover:border-3 transition-transform duration-500'>
-                            <div className='w-full h-52 mx-auto'>
-                                <img src={CatFoods2} className='h-full w-fit mx-auto object-contain' />
-                            </div>
-                            <div className='text-center mt-3'> 
-                                <div className='text-lg font-medium'>Whiskas for Kittens</div>
+                                <div className='text-lg font-medium'>Playing Rod with Feathers</div>
                                 <div className='text-sm font-medium'>Rs. 1200.00</div>
                             </div>
                         </div>
-                        <div className='peer bg-white rounded-md shadow-md border-2 border-borderForWhite p-5 w-60 h-80 flex flex-col justify-between cursor-pointer hover:scale-110 hover:border-secondary-200 hover:border-3 transition-transform duration-500'>
+                        <div className='peer bg-white rounded-md shadow-md border-2 border-borderForWhite p-5 w-60 h-96 flex flex-col justify-center cursor-pointer hover:scale-110 hover:border-secondary-200 hover:border-3 transition-transform duration-500'>
                             <div className='w-full h-52 mx-auto'>
-                                <img src={DogFoods3} className='h-full w-fit mx-auto object-contain' />
+                                <img src={PlayingRopeWithBall1} className='h-full w-fit mx-auto object-contain' />
                             </div>
                             <div className='text-center mt-3'> 
-                                <div className='text-lg font-medium'>Brit Premium</div>
-                                <div className='text-sm font-medium'>Rs. 1400.00</div>
+                                <div className='text-lg font-medium'>Playing Rope with Ball</div>
+                                <div className='text-sm font-medium'>Rs. 1350.00</div>
+                            </div>
+                        </div>
+                        <div className='peer bg-white rounded-md shadow-md border-2 border-borderForWhite p-5 w-60 h-96 flex flex-col justify-center cursor-pointer hover:scale-110 hover:border-secondary-200 hover:border-3 transition-transform duration-500'>
+                            <div className='w-full h-52 mx-auto'>
+                                <img src={RubberBone1} className='h-full w-fit mx-auto object-contain' />
+                            </div>
+                            <div className='text-center mt-3'> 
+                                <div className='text-lg font-medium'>Rubber Bone</div>
+                                <div className='text-sm font-medium'>Rs. 1200.00</div>
+                            </div>
+                        </div>
+                        <div className='peer bg-white rounded-md shadow-md border-2 border-borderForWhite p-5 w-60 h-96 flex flex-col justify-center cursor-pointer hover:scale-110 hover:border-secondary-200 hover:border-3 transition-transform duration-500'>
+                            <div className='w-full h-52 mx-auto'>
+                                <img src={StuffedPuppyToy1} className='h-full w-fit mx-auto object-contain' />
+                            </div>
+                            <div className='text-center mt-3'> 
+                                <div className='text-lg font-medium'>Stuffed Puppy Toy</div>
+                                <div className='text-sm font-medium'>Rs. 2650.00</div>
                             </div>
                         </div>
                     </div>
