@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const OwnerRegistration = () => {
     return (
-        <div className='w-full h-full flex items-center justify-center'>
+        <div className='w-full h-screen flex items-center justify-center bg-secondary-100'>
             <div className='bg-white py-5 px-8 shadow-md rounded-md border-solid border border-[#e9e9e9] m-5 w-fit'>
                 <h1>Owner Registration</h1>
                 <form action="" method="post" className='max-w-[600px] min-w-[200px] w-full mt-8'>
