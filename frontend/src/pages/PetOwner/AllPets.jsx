@@ -3,7 +3,7 @@ import Cat1 from '../../assets/images/Cat1.png'
 import Dog1 from '../../assets/images/Dog1.png'
 import { GrAdd } from 'react-icons/gr'
 
-const ShowPets = () => {
+const AllPets = () => {
     return (
         <section className='flex flex-auto gap-5 px-12 py-10'>
             <div className='flex flex-col gap-5 w-1/2 min-w-[300px]'>            
@@ -52,4 +52,4 @@ const ShowPets = () => {
     )
 }
 
-export default ShowPets
+export default AllPets
