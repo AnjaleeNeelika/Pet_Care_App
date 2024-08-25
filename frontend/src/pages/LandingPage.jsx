@@ -7,6 +7,10 @@ import PetClinicImg1 from '../assets/images/pet-clinic-1.jpg'
 import PetPharmacyImg1 from "../assets/images/pet-pharmacy-2.jpg"
 import PetGroomingImg1 from '../assets/images/pet-grooming-3.jpg'
 import PetStore1 from '../assets/images/pet-store-2.jpg'
+import { BiArrowFromTop } from 'react-icons/bi'
+import { BsArrowUpRight, BsTwitterX } from 'react-icons/bs'
+import { FaAddressBook, FaEnvelope, FaFacebook, FaInstagram, FaMailchimp, FaMapLocation, FaPhone, FaX, FaYoutube } from 'react-icons/fa6'
+import { IoLocation } from 'react-icons/io5'
 
 const LandingPage = () => {
     return (
@@ -124,15 +128,76 @@ const LandingPage = () => {
                 </div>
             </div>
 
-            <footer className='p-20 border-t-2 bg-[#2a2f4f] text-white'>
-                <div className=''>
-                    <div>
-                        <div className='text-xl font-medium'>Contact</div>
-                        <div></div>
+            <footer className='p-20 border-t-2 bg-[#2a2f4f] text-white flex justify-between items-center gap-50'>
+                <div className='flex gap-32'>
+                    <div className='flex flex-col gap-10'>
+                        <div className='text-xl font-bold'>POLGAHAWELA</div>
+                        <div className='flex flex-col gap-2 font-semibold'>
+                            <div className='flex gap-5 items-center'>
+                                <FaPhone size={14} />
+                                <div className='flex gap-5'>
+                                    <span>+94 71 2345 678</span>
+                                    <span>|</span>
+                                    <span>+94 37 2234 567</span>
+                                </div>
+                            </div>
+                            <div className='flex gap-5 items-center'>
+                                <FaEnvelope size={14} />
+                                <Link className='underline'>petcare.polgahawela@gmail.com</Link>
+                            </div>
+                            <div className='flex gap-5 items-center'>
+                                <IoLocation size={16} />
+                                <div>56/A, Colombo Road, Polgahawela</div>
+                            </div>                            
+                        </div>
+                        <Link className='w-fit flex gap-2 justify-between items-center border-b font-semibold'>
+                            SEE ON MAP
+                            <BsArrowUpRight />
+                        </Link>
                     </div>
-                    <div>
-                        <div className='text-xl font-medium'>Email</div>
-                        <div></div>
+
+                    <div className='flex flex-col gap-10'>
+                        <div className='text-xl font-bold'>WARAKAPOLA</div>
+                        <div className='flex flex-col gap-2 font-semibold'>
+                            <div className='flex gap-5 items-center'>
+                                <FaPhone size={14} />
+                                <div className='flex gap-5'>
+                                    <span>+94 71 2345 025</span>
+                                    <span>|</span>
+                                    <span>+94 35 2234 826</span>
+                                </div>
+                            </div>
+                            <div className='flex gap-5 items-center'>
+                                <FaEnvelope size={14} />
+                                <Link className='underline'>petcare.warakapola@gmail.com</Link>
+                            </div>
+                            <div className='flex gap-5 items-center'>
+                                <IoLocation size={16} />
+                                <div>63/1, Kandy Road, Warakapola</div>
+                            </div>
+                        </div>
+                        <Link className='w-fit flex gap-2 justify-between items-center border-b font-semibold'>
+                            SEE ON MAP
+                            <BsArrowUpRight />
+                        </Link>
+                    </div>
+                </div>
+
+                <div className='flex flex-col gap-5'>
+                    <div className='text-xl font-bold'>FOLLOW US</div>
+                    <div className='flex justify-between items-center w-fit gap-5'>
+                        <Link className='p-2 border-2 rounded-full'>
+                            <FaYoutube size={24} />
+                        </Link>
+                        <Link className='p-2 border-2 rounded-full'>
+                            <FaInstagram size={24} />
+                        </Link>
+                        <Link className='p-2 border-2 rounded-full'>
+                            <FaFacebook size={24} />
+                        </Link>
+                        <Link className='p-2 border-2 rounded-full'>
+                            <BsTwitterX size={24} />
+                        </Link>
                     </div>
                 </div>
             </footer>
