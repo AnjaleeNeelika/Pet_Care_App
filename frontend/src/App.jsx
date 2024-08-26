@@ -13,6 +13,7 @@ import Pharmacy from './pages/PetOwner/Pharmacy'
 import Grooming from './pages/PetOwner/Grooming'
 import Store from './pages/PetOwner/Store'
 import AllPets from './pages/PetOwner/AllPets'
+import PetDetails from './pages/PetOwner/PetDetails'
 
 
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
                     <Route path='grooming' element={<Grooming />} />
                     <Route path='pet-store' element={<Store />} />
                     <Route path='pets' element={<AllPets />} />
+                    <Route path='pets/:name' element={<PetDetails />} />
                 </Route>
                 
                 <Route path='owner-login' element={<OwnerLogin />} />
