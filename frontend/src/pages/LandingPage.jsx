@@ -128,7 +128,7 @@ const LandingPage = () => {
                 </div>
             </div>
 
-            <footer className='p-20 border-t-2 bg-[#2a2f4f] text-white flex justify-between items-center gap-50'>
+            <footer className='p-20 border-t-2 bg-[#2a2f4f] text-white flex justify-evenly items-center gap-50'>
                 <div className='flex gap-32'>
                     <div className='flex flex-col gap-10'>
                         <div className='text-xl font-bold'>POLGAHAWELA</div>
@@ -156,7 +156,7 @@ const LandingPage = () => {
                         </Link>
                     </div>
 
-                    <div className='flex flex-col gap-10'>
+                    {/* <div className='flex flex-col gap-10'>
                         <div className='text-xl font-bold'>WARAKAPOLA</div>
                         <div className='flex flex-col gap-2 font-semibold'>
                             <div className='flex gap-5 items-center'>
@@ -180,7 +180,7 @@ const LandingPage = () => {
                             SEE ON MAP
                             <BsArrowUpRight />
                         </Link>
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className='flex flex-col gap-5'>
